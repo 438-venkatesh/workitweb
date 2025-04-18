@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WorkIt - Get Help Get Paid</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Outfit -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("UtLoIsPZh1Nhrn1S2"); // Replace with your EmailJS public key
+  })();
+</script>
+
+</head>
+<body>
+
+ <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="fade-slide">WorkIt</h1>
+    <p class="fade-slide delay-1">A Platform for students to post tasks, get help, and earn – all in one campus-exclusive app.</p>
+    
+    <!-- Lottie Animation -->
+    <script src="https://unpkg.com/lottie-web@5.12.0/build/player/lottie.min.js"></script>
+    <div id="workit-animation" class="fade-slide delay-2"></div>
+    <script>
+      lottie.loadAnimation({
+        container: document.getElementById('workit-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'Animation.json' // Make sure this file is in the correct path
+      });
+    </script>
+    <!-- CTA Button -->
+    <a href="#download" class="btn-primary fade-slide delay-3">Download App</a>
+  </div>
+</section>
+
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Choose WorkIt?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <img src="https://img.freepik.com/free-vector/task-list-concept-illustration_114360-4723.jpg" alt="Post Work">
+        <h3>Post Your Work</h3>
+        <p>Got works to do? Let others do it for a fair price.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://img.freepik.com/free-vector/make-money-concept-illustration_114360-2399.jpg" alt="Earn Money">
+        <h3>Earn While Studying</h3>
+        <p>Take up tasks and earn extra money in your free time </p>
+      </div>
+      <div class="feature-card">
+        <img src="21743663_6485983.svg" alt="Trusted System">
+        <h3>Safe & Trusted</h3>
+        <p>campus-only users & no commsions </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="how-it-works-content">
+      <div>
+        <ol>
+          <li>Register with your college email</li>
+          <li>Post a task or browse available ones</li>
+          <li>Accept a bid to complete other's  work  or give your's to others</li>
+          <li>Earn or pay through mutual agreement safely</li>
+        </ol>
+      </div>
+      <img src="app-development-concept_23-2148684987.avif" alt="App Flow">
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>How Bidding Works?</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+          <p class="author">Post What You Need</p>
+        </p>Upload your task with clear instructions and set your budget
+      </div>
+      <div class="testimonial-card">
+          <p class="author">Let Others Bid </p>
+        <p>Intrested students offer their prices and bid to complete it. so compare them and chat</p>
+      </div>
+      <div class="testimonial-card">
+          <p class="author">Assign & Pay them or Get Paid if you bid</p>
+        <p>selcet the best best bidder based on your requirement. get it done and pay securely!</p>
+      </div>
+    </div>
+  </section>
+   <!-- App Preview Section -->
+   <section class="app-preview">
+    <h2>App Preview</h2>
+    <p>Get a sneak peek into how WorkIt looks and works!</p>
+    <div class="preview-grid">
+      <div class="preview-card animate delay-1"><img src="7.png" alt="Preview 1"></div>
+      <div class="preview-card animate delay-2"><img src="1.png" alt="Preview 2"></div>
+      <div class="preview-card animate delay-3"><img src="2.png" alt="Preview 3"></div>
+      <div class="preview-card animate delay-4"><img src="3.png" alt="Preview 4"></div>
+      <div class="preview-card animate delay-5"><img src="6.png" alt="Preview 6"></div>
+    </div>
+  </section>
+  
+
+<!-- About Us Section -->
+<section class="about">
+  <h2>About Us</h2>
+  <p>WorkIt is a platform to connect students. We dont control or interface in your tasks and payments.
+
+    We believe student can support each other and grow together. that's what WorkIt is all about</p>
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions or feedback? We'd love to hear from you.</p>
+  <form class="contact-form" id="contact-form">
+    <input type="text" name="user_name" placeholder="Your Name" required />
+    <input type="email" name="user_email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Feedback or Message" required></textarea>
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+  
+</section>
+
+
+  <!-- Call to Action -->
+  <section id="download" class="cta">
+    <h2>Ready to Get Started?</h2>
+    <p>Download WorkIt now and simplify your hustles!</p>
+    <!-- <img src="https://img.freepik.com/free-vector/mobile-app-development-concept_23-2148684983.jpg" alt="Download WorkIt App"> -->
+    <a href="https://expo.dev/artifacts/eas/w8vTzBffFogL8zZDq6sHN3.apk" class="btn-primary">Download App</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+   <center><p>&copy; WorkIt | Made by IIITN students</p></center> 
+  </footer>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_m36xa5q', 'template_zv1add1', this)
+        .then(function(response) {
+          alert('Message sent successfully!');
+        }, function(error) {
+          alert('Oops! Something went wrong: ' + error.text);
+        });
+  
+      this.reset(); // Optional: reset form after submit
+    });
+  </script>
+  
+</body>
+</html>
